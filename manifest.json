@@ -1,0 +1,29 @@
+{
+  "name": "Instagram Prospector",
+  "short_name": "Instagram Prospector",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Instagram Prospector",
+  "icons": {
+    "16": "icons/icon19.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+     "tabs",
+     "storage",
+     "*://*/*"
+  ],
+  "browser_action": {
+    "default_icon": {
+      "19": "images/icon19.png",
+      "38": "images/icon48.png"
+    },
+    "default_icon": "icons/icon48.png",
+    "default_title": "Instagram"
+  },
+  "background": {
+	"scripts": ["js/jquery.js","js/background.js"]
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
